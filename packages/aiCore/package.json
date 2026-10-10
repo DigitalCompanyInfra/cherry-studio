@@ -53,9 +53,9 @@
     }
   },
   "scripts": {
-    "build": "tsdown",
+    "build": "node init && tsdown",
     "clean": "rm -rf dist",
-    "dev": "pnpm --workspace-root exec tsc -w -p packages/aiCore/tsconfig.json",
+    "dev": "node init && pnpm --workspace-root exec tsc -w -p packages/aiCore/tsconfig.json",
     "format": "pnpm --workspace-root exec oxfmt --write packages/aiCore",
     "format:check": "pnpm --workspace-root exec oxfmt --check packages/aiCore",
     "lint": "oxlint --fix && eslint . --fix --cache",

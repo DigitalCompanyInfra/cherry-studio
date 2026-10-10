@@ -37,9 +37,9 @@
     }
   },
   "scripts": {
-    "build": "tsdown",
+    "build": "node init && tsdown",
     "clean": "rm -rf dist",
-    "dev": "pnpm --workspace-root exec tsc -w -p packages/ai-sdk-provider/tsconfig.json",
+    "dev": "node init && pnpm --workspace-root exec tsc -w -p packages/ai-sdk-provider/tsconfig.json",
     "prepublishOnly": "pnpm build",
     "test": "vitest run",
     "test:watch": "vitest"

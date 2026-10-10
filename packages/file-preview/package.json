@@ -32,7 +32,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "vite build",
+    "build": "node init && vite build",
     "prepack": "pnpm build",
     "test": "pnpm --workspace-root test:pkg:file-preview",
     "typecheck": "tsc --noEmit -p tsconfig.json"

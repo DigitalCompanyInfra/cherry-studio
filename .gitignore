@@ -10,7 +10,6 @@ lerna-debug.log*
 .yarn-cache
 
 # Editor directories and files
-.vscode/*
 !.vscode/extensions.json
 !.vscode/settings.json
 .idea
@@ -46,8 +45,6 @@ resources/binaries/
 scripts/linux-native/prebuilt/
 
 # ENV
-.env
-.env.*
 !.env.example
 
 # Local
@@ -101,3 +98,4 @@ YOUR_MEMORY_FILE_PATH
 .sessions/
 .devtools
 .omo/
+config.bat

@@ -72,7 +72,7 @@
     }
   },
   "scripts": {
-    "build": "tsdown",
+    "build": "node init && tsdown",
     "lint": "pnpm --workspace-root exec oxfmt --write packages/extension-table-plus/src && eslint --fix ./src/",
     "prepublishOnly": "pnpm build"
   },

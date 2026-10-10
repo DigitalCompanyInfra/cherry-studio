@@ -79,10 +79,10 @@
     "./styles/theme.css": "./dist/styles/theme.css"
   },
   "scripts": {
-    "build": "pnpm theme:build && tsdown && mkdir -p dist/styles && cp -R src/styles/. dist/styles/",
-    "build:storybook": "storybook build",
+    "build": "node init && pnpm theme:build && tsdown && mkdir -p dist/styles && cp -R src/styles/. dist/styles/",
+    "build:storybook": "node init && storybook build",
     "clean": "rm -rf dist",
-    "dev": "pnpm --workspace-root exec tsc -w -p packages/ui/tsconfig.json",
+    "dev": "node init && pnpm --workspace-root exec tsc -w -p packages/ui/tsconfig.json",
     "icons:generate": "tsx scripts/icons-generate.ts",
     "lint": "eslint src --ext .ts,.tsx --fix",
     "posticons:generate": "pnpm --workspace-root exec eslint packages/ui/src/components/icons --ext .ts,.tsx --fix && pnpm --workspace-root format",
